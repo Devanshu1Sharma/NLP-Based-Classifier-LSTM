@@ -6,17 +6,20 @@ Problem Statement
 With a high volume of complaint data, manually categorizing each case based on parameters such as victim involvement, fraud type, and other unique details is challenging and time-consuming. This project provides a solution by building an NLP model that classifies complaints based on these factors, allowing for efficient organization and prioritization in fraud investigations. 
 
 
-Solution Approach 
+Solution Approach
+
 A hybrid methodology was employed, combining robust data preprocessing, exploratory data analysis (EDA), and a Deep Learning Long Short-Term Memory (LSTM) model for effective complaint classification.
 
 
 Documentation Report
+
 The dataset consists of complaints categorized into multiple types of cybercrimes. A Confusion Matrix was used to visualize the distribution of categories, providing insights into the volume of data for each category and highlighting any class imbalance.
 The "Confusion Matrix" image shows the distribution of the different crime categories in the dataset. The matrix displays the count of each crime type, providing a visual overview of the data. 
 ![image](https://github.com/user-attachments/assets/1857fdfe-7f7a-4b6a-8660-d9d38dcb4023)
 
 
 Data Preprocessing 
+
 Text data preprocessing is a critical step for ensuring model performance. The following steps were executed:
 •	Normalization: Converted text to lowercase and removed special characters.
 •	Tokenization: Split text into individual tokens (words).
@@ -25,6 +28,7 @@ Text data preprocessing is a critical step for ensuring model performance. The f
 
 
 Exploratory Data Analysis (EDA) 
+
 Two key performance plots were generated during the model training phase:
 1.	Accuracy Over Epochs:
 o	Training accuracy started at 0.9297 and improved to 0.93 (93%).
@@ -34,7 +38,8 @@ o	Both training and validation losses decreased over epochs, indicating effectiv
 These visualizations confirmed the model's steady improvement in performance without overfitting.
 
 
-Model Architecture 
+Model Architecture
+
 The model was built using TensorFlow's LSTM framework, with the following components:
 •	Input Layers:
 o	input_ids and attention_mask for handling tokenized text inputs.
@@ -46,7 +51,8 @@ o	Dense layers with dropout regularization to prevent overfitting.
 o	A softmax-activated dense layer to predict the probabilities of complaint categories.
 
 
-Model Evaluation 
+Model Evaluation
+
 Evaluation metrics were derived from the Classification Report, which showcased precision, recall, F1-score, and support for each category.
 The "Classification Report" image shows the model's performance metrics, including precision, recall, f1-score, and support for each complaint category. The model achieves high performance, with most categories having precision and recall values above 0.85
 ![image](https://github.com/user-attachments/assets/7313fa91-03c7-4884-96ae-772ed2baa286)
@@ -62,7 +68,8 @@ Overall, the model seems to have strong performance, with high precision, recall
 ![image](https://github.com/user-attachments/assets/fd6534ea-29f1-415f-9599-373c8cffcd90)
 
 
-Conclusion 
+Conclusion
+
 The NLP Complaint Categorization Model is an efficient solution for automating the classification of complaints based on parameters like victim involvement and fraud type. Leveraging advanced preprocessing, EDA, and a well-designed LSTM model, this project achieved remarkable precision, recall, and F1-scores.
 This innovation promises to significantly enhance fraud investigation workflows by providing faster and more reliable categorization, ultimately contributing to streamlined operations and better resource allocation.
 ![image](https://github.com/user-attachments/assets/2a962a91-edaf-4df1-81d4-2d62cc4df285)
