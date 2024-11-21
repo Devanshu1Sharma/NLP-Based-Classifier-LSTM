@@ -1,20 +1,20 @@
-<b>NLP Complaint Categorization Model<b>
+NLP Complaint Categorization Model
 
-<br>
+
 Problem Statement 
 With a high volume of complaint data, manually categorizing each case based on parameters such as victim involvement, fraud type, and other unique details is challenging and time-consuming. This project provides a solution by building an NLP model that classifies complaints based on these factors, allowing for efficient organization and prioritization in fraud investigations. 
 
-<br>
+
 Solution Approach 
 A hybrid methodology was employed, combining robust data preprocessing, exploratory data analysis (EDA), and a Deep Learning Long Short-Term Memory (LSTM) model for effective complaint classification.
 
-<br>
+
 Documentation Report
 The dataset consists of complaints categorized into multiple types of cybercrimes. A Confusion Matrix was used to visualize the distribution of categories, providing insights into the volume of data for each category and highlighting any class imbalance.
 The "Confusion Matrix" image shows the distribution of the different crime categories in the dataset. The matrix displays the count of each crime type, providing a visual overview of the data. 
 ![image](https://github.com/user-attachments/assets/1857fdfe-7f7a-4b6a-8660-d9d38dcb4023)
 
-<br>
+
 Data Preprocessing 
 Text data preprocessing is a critical step for ensuring model performance. The following steps were executed:
 •	Normalization: Converted text to lowercase and removed special characters.
@@ -22,7 +22,7 @@ Text data preprocessing is a critical step for ensuring model performance. The f
 •	Stopword Removal: Filtered out common but uninformative words like "and," "the," etc.
 •	Stemming: Reduced words to their root forms using a custom clean_and_stem function to ensure uniformity.
 
-<br>
+
 Exploratory Data Analysis (EDA) 
 Two key performance plots were generated during the model training phase:
 1.	Accuracy Over Epochs:
@@ -32,7 +32,7 @@ o	Validation accuracy remained consistent, fluctuating around 92%.
 o	Both training and validation losses decreased over epochs, indicating effective learning.
 These visualizations confirmed the model's steady improvement in performance without overfitting.
 
-<br>
+
 Model Architecture 
 The model was built using TensorFlow's LSTM framework, with the following components:
 •	Input Layers:
@@ -44,7 +44,7 @@ o	Dense layers with dropout regularization to prevent overfitting.
 •	Output Layer:
 o	A softmax-activated dense layer to predict the probabilities of complaint categories.
 
-<br>
+
 Model Evaluation 
 Evaluation metrics were derived from the Classification Report, which showcased precision, recall, F1-score, and support for each category.
 The "Classification Report" image shows the model's performance metrics, including precision, recall, f1-score, and support for each complaint category. The model achieves high performance, with most categories having precision and recall values above 0.85
@@ -59,8 +59,8 @@ The recall scores are also quite high, with 0.93 for "Any Other Cyber Crime" and
 4. Support: The "support" column indicates the total number of instances for each category in the dataset. This provides context for interpreting the other metrics, as categories with more instances will generally have more robust performance. 
 Overall, the model seems to have strong performance, with high precision, recall, and F1-scores for the majority of the complaint categories. This suggests the NLP approach adopted in this project is effective in accurately classifying the different types of cyber crimes and complaints. 
 ![image](https://github.com/user-attachments/assets/fd6534ea-29f1-415f-9599-373c8cffcd90)
-   
-<br>
+
+
 Conclusion 
 The NLP Complaint Categorization Model is an efficient solution for automating the classification of complaints based on parameters like victim involvement and fraud type. Leveraging advanced preprocessing, EDA, and a well-designed LSTM model, this project achieved remarkable precision, recall, and F1-scores.
 This innovation promises to significantly enhance fraud investigation workflows by providing faster and more reliable categorization, ultimately contributing to streamlined operations and better resource allocation.
