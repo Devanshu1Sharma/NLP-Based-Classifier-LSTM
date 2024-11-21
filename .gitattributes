@@ -1,0 +1,4 @@
+ipynb filter=lfs diff=lfs merge=lfs -text
+*.ipynb filter=lfs diff=lfs merge=lfs -text
+lstm.ipynb filter=lfs diff=lfs merge=lfs -text
+bert+lstm.ipynb filter=lfs diff=lfs merge=lfs -text
