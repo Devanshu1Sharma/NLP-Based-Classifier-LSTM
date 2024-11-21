@@ -1,7 +1,8 @@
 NLP Complaint Categorization Model
 
 
-Problem Statement 
+Problem Statement
+
 With a high volume of complaint data, manually categorizing each case based on parameters such as victim involvement, fraud type, and other unique details is challenging and time-consuming. This project provides a solution by building an NLP model that classifies complaints based on these factors, allowing for efficient organization and prioritization in fraud investigations. 
 
 
